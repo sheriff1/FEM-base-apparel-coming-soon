@@ -1,19 +1,79 @@
 body {
+    margin: 0;
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url('../images/bg-pattern-desktop.svg');
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
     letter-spacing: 0.25em;
 }
 
+p {
+    line-height: 1.75em;
+    padding-bottom: 0.75em;
+}
+
+button {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-style: none;
+    border-radius: 20em;
+    width: 7em;
+    height: 4em;
+    position: relative;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+form {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 12em;
+}
+
+.logo-section {
+    padding-top: 2em;
+    height: 30%;
+}
+
+.form-section {
+    height: 70%;
+}
+
+.right-side {}
+
+#email {
+    border-color: hsl(0, 36%, 70%);
+    border-width: 1px;
+    border-radius: 20em;
+    border-style: solid;
+    font-size: 16px;
+    font-family: inherit;
+    background: transparent;
+    padding: 0.5em 0 0.5em 1em;
+}
+
 .__thin {
     font-weight: 300;
+}
+
+.__desaturated-red {
+    color: hsl(0, 36%, 70%);
 }
 
 .__thicc {
