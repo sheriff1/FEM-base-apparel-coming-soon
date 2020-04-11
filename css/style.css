@@ -21,8 +21,8 @@ button {
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border-style: none;
     border-radius: 20em;
-    width: 7em;
-    height: 4em;
+    width: 8em;
+    height: 4.7em;
     position: relative;
     left: -60px;
     -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
@@ -44,7 +44,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 12em;
+    padding: 0px 10em;
 }
 
 .logo-section {
@@ -66,7 +66,7 @@ form {
     font-size: 16px;
     font-family: inherit;
     background: transparent;
-    padding: 0.5em 0 0.5em 1em;
+    padding: 1em 0 1em 1.5em;
     width: 400px;
 }
 
@@ -74,7 +74,14 @@ form {
     font-size: 12px;
     padding-left: 1.5em;
     margin: 0;
-    margin-top: 0.5em;
+    margin-top: -1.5em;
+    display: none;
+}
+
+.error-icon {
+    position: relative;
+    top: -39px;
+    left: 330px;
     display: none;
 }
 
