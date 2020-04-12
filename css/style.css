@@ -10,12 +10,14 @@ h1 {
     padding: 0;
     text-transform: uppercase;
     letter-spacing: 0.25em;
+    line-height: 60px;
     color: #363030;
 }
 
 p {
     line-height: 1.75em;
     padding-bottom: 0.75em;
+    padding-right: 4em;
 }
 
 button {
@@ -26,13 +28,23 @@ button {
     height: 4.7em;
     position: relative;
     left: -60px;
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(222, 191, 191, 0.75);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(222, 191, 191, 0.75);
+    box-shadow: 0px 10px 20px 0px rgba(222, 191, 191, 0.75);
 }
 
 form {
     display: flex;
+}
+
+::placeholder {
+    color: hsl(0, 36%, 70%);
+    opacity: 0.45;
+}
+
+.nav,
+.mobile-hero-img {
+    display: none;
 }
 
 .main {
@@ -45,22 +57,22 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 10em;
+    padding: 0px 7em 0 12.5em;
 }
 
 .logo-section {
-    padding-top: 3em;
-    height: 25%;
+    padding-top: 3.5em;
+    height: 24%;
 }
 
 .form-section {
-    height: 75%;
+    height: 76%;
 }
 
 .right-side {}
 
 .email {
-    border-color: hsl(0, 36%, 70%);
+    border-color: hsla(0, 36%, 70%, 33%);
     border-width: 1px;
     border-radius: 20em;
     border-style: solid;
@@ -73,7 +85,7 @@ form {
 
 .error-message {
     font-size: 12px;
-    padding-left: 1.5em;
+    padding-left: 2em;
     margin: 0;
     margin-top: -1.5em;
     display: none;
@@ -100,4 +112,27 @@ form {
 
 .__thicc {
     font-weight: 600;
+}
+
+@media only screen and (max-width: 406px) {
+    .main {
+        flex-direction: column;
+    }
+    .form-section {
+        text-align: center;
+    }
+    .nav,
+    .mobile-hero-img {
+        display: block;
+    }
+    .left-side {
+        padding: 0;
+    }
+    .left-side .logo-section {
+        display: none;
+    }
+    .right-side {
+        display: none;
+    }
+    .mobile-hero-img {}
 }
