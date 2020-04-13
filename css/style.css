@@ -115,11 +115,42 @@ form {
 }
 
 @media only screen and (max-width: 406px) {
+    p {
+        padding: 0 3em;
+        font-size: 0.85em;
+    }
+    h1 {
+        padding: 2em;
+        font-size: 3.5em;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        line-height: 42px;
+        color: #363030;
+        font-size: 2.5em;
+    }
+    form {
+        padding-left: 2em;
+        padding-bottom: 15em;
+        padding-top: 1.5em;
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+    }
     .main {
         flex-direction: column;
+        background-image: none;
     }
     .form-section {
         text-align: center;
+        height: inherit;
+    }
+    .logo-section {
+        padding: 2em;
+    }
+    .logo-section>img {
+        width: 35%;
     }
     .nav,
     .mobile-hero-img {
@@ -127,6 +158,7 @@ form {
     }
     .left-side {
         padding: 0;
+        padding-top: 4em;
     }
     .left-side .logo-section {
         display: none;
@@ -134,5 +166,9 @@ form {
     .right-side {
         display: none;
     }
-    .mobile-hero-img {}
+    .bigform {
+        width: auto;
+        height: auto;
+    }
+    #button {}
 }
